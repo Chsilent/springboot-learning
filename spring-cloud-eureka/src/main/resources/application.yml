@@ -1,0 +1,10 @@
+###应用名称
+spring:
+  profiles:
+    active: single,cluster-node1,cluster-node2,cluster-node3
+  application:
+    name: spring-cloud-eureka
+
+
+
+
