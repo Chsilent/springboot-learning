@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0827af96-d73b-40c1-9d93-9bbd61a9bf6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application-node2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/spring-cloud-hystrix-dashboard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-turbine/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-turbine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/java/com/walker/SpringCloudHystrixTurbineApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/test/java/com/walker/springcloudhystrixturbine/SpringCloudHystrixTurbineApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-hystrix/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/controller/ConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node1.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node3.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-demo1/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-kafka/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-producer/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-feign/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-hystrix/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-hystrix-turbine/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1550707157">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="10" />
+          <entry key="properties" value="6" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="11" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="185" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Properties" value="18" />
+          <entry key="XML" value="60" />
+          <entry key="YAML" value="77" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1441" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="8775" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Properties" value="747" />
+          <entry key="XML" value="246" />
+          <entry key="YAML" value="898" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/SpringCloudHystrixDashboardNode2Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="45" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/controller/ConsumerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application-node2.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/java/com/walker/SpringCloudHystrixTurbineApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>url</find>
+      <find>mysq</find>
+      <find>web</find>
+      <find>subscribe</find>
+      <find>Attempt to heartbeat failed since group is rebalancing</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../activityIssue (trunk)/activity-root/activity-admin" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../activityIssue (trunk)/activity-root/activity-api" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../source_code_analyse/SpringFramework/spring-framework-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../trunk/activity-api" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../trunk/activity-controller" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../userCenter-root/userCenter-admin" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../userCenter-root/userCenter-api" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/activityIssue (trunk)/activity-root/activity-admin" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/activityIssue (trunk)/activity-root/activity-api" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/activityIssue(trunk)/activity-root/activity-admin" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/activityIssue(trunk)/activity-root/activity-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/activityIssue (trunk)/activity-root/activity-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/activityIssue (trunk)/activity-root/activity-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/branch-1.1.0/activity-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/branch-1.1.0/activity-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo (trunk)/f-mcm-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.1/f-crm-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.1/f-mcm-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.2/f-3m-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.2/f-adt-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.2/f-crm-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo-branches/branch-1.0.2/f-mcm-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo/trunk/f-3m-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo/trunk/f-adt-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo/trunk/f-crm-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo/trunk/f-mcm-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/flamingo/trunk/f-statistics-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/issueCode-oversea/trunk/issueCode-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/issueCode-oversea/trunk/issueCode-crm-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/oversea-issueCode/issueCode-oversea/trunk/issueCode-api" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/oversea-issueCode/issueCode-oversea/trunk/issueCode-crm-admin" value="PREVIEW" />
+        <entry key="/ffalcon/workSpacke/tvManager (trunk)/xserver-tvManager-api" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/springboot-kafka/src/main/java/com/walker/consumer3/ConsumerMain.java" />
+        <option value="$PROJECT_DIR$/springboot-kafka/src/main/java/com/walker/consumer3/WorkerThread.java" />
+        <option value="$PROJECT_DIR$/springboot-kafka/src/main/java/com/walker/consumer3/ConsumerHandler.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/java/com/walker/SpringCloudEurekaApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-single" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-single.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/java/com/walker/SpringCloudEurekaProducerApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/java/com/walker/controller/MyFirstServiceController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-feign/src/main/java/com/walker/springcloudfeign/SpringCloudFeignApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/SpringCloudEurekaConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/java/com/walker/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-kafka/.gitignore" />
+        <option value="$PROJECT_DIR$/spring-cloud-feign/.gitignore" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/.gitignore" />
+        <option value="$PROJECT_DIR$/springboot-demo1/.gitignore" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/.gitignore" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/.gitignore" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemote.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/SpringCloudHystrixDashboardApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/java/com/walker/SpringCloudHystrixTurbineApplication.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node1.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node2.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node3.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node1.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node2.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/SpringCloudHystrixDashboardNode2Application.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application-node1.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application-node2.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-cloud-hystrix-dashboard-node2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-cloud-hystrix-dashboard-node2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="23" />
+    <option name="width" value="1856" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springboot-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554797168570" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37968442" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.walker" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker" />
+      <recent name="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringCloudHystrixTurbineApplication">
+    <configuration name="ConsumerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.walker.consumer2.ConsumerMain" />
+      <module name="springboot-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.walker.consumer2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.walker.consumer3.ConsumerMain" />
+      <module name="springboot-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.walker.consumer3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaConsumerAutoTest.threadConsumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.walker.springbootkafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.walker.springbootkafka" />
+      <option name="MAIN_CLASS_NAME" value="com.walker.springbootkafka.KafkaConsumerAutoTest" />
+      <option name="METHOD_NAME" value="threadConsumer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaConsumerManualTest.threadConsumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.walker.springbootkafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.walker.springbootkafka" />
+      <option name="MAIN_CLASS_NAME" value="com.walker.springbootkafka.KafkaConsumerManualTest" />
+      <option name="METHOD_NAME" value="threadConsumer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudEurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudEurekaConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-eureka-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudEurekaConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudEurekaProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-eureka-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudEurekaProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.springcloudfeign.SpringCloudFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudHystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-hystrix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudHystrixApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudHystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-hystrix-dashboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudHystrixDashboardApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudHystrixDashboardNode2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-hystrix-dashboard-node2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudHystrixDashboardNode2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudHystrixTurbineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-hystrix-turbine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringCloudHystrixTurbineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDemo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-demo1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringbootDemo1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-kafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walker.SpringbootKafkaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringbootDemo1Application" />
+      <item itemvalue="Spring Boot.SpringbootKafkaApplication" />
+      <item itemvalue="Spring Boot.SpringCloudEurekaApplication" />
+      <item itemvalue="Spring Boot.SpringCloudEurekaProducerApplication" />
+      <item itemvalue="Spring Boot.SpringCloudEurekaConsumerApplication" />
+      <item itemvalue="Spring Boot.SpringCloudFeignApplication" />
+      <item itemvalue="JUnit.KafkaConsumerManualTest.threadConsumer" />
+      <item itemvalue="JUnit.KafkaConsumerAutoTest.threadConsumer" />
+      <item itemvalue="Application.ConsumerMain" />
+      <item itemvalue="Spring Boot.SpringCloudHystrixApplication" />
+      <item itemvalue="Spring Boot.SpringCloudHystrixDashboardApplication" />
+      <item itemvalue="Spring Boot.SpringCloudHystrixTurbineApplication" />
+      <item itemvalue="Spring Boot.SpringCloudHystrixDashboardNode2Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConsumerMain" />
+        <item itemvalue="JUnit.KafkaConsumerManualTest.threadConsumer" />
+        <item itemvalue="JUnit.KafkaConsumerAutoTest.threadConsumer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0827af96-d73b-40c1-9d93-9bbd61a9bf6c" name="Default Changelist" comment="" />
+      <created>1549855053427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549855053427</updated>
+      <workItem from="1549855055151" duration="9022000" />
+      <workItem from="1549934899089" duration="844000" />
+      <workItem from="1550127822738" duration="704000" />
+      <workItem from="1552302083507" duration="767000" />
+      <workItem from="1552302938280" duration="3228000" />
+      <workItem from="1552354595205" duration="14393000" />
+      <workItem from="1552383914909" duration="5878000" />
+      <workItem from="1552442592162" duration="3407000" />
+      <workItem from="1552464389696" duration="558000" />
+      <workItem from="1552468956546" duration="259000" />
+      <workItem from="1552469490094" duration="5249000" />
+      <workItem from="1552526445494" duration="16722000" />
+      <workItem from="1552612904706" duration="759000" />
+      <workItem from="1552893624912" duration="2267000" />
+      <workItem from="1552960310823" duration="1485000" />
+      <workItem from="1554104344525" duration="374000" />
+      <workItem from="1554710060817" duration="12046000" />
+      <workItem from="1554775148825" duration="16503000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 22m 40s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 23m 08s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 25m 19s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerManualTest_threadConsumer - 2019.03.14 at 14h 29m 54s.xml">
+      <configuration name="KafkaConsumerManualTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 30m 34s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 31m 16s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 31m 29s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 32m 13s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerAutoTest_threadConsumer - 2019.03.14 at 14h 33m 13s.xml">
+      <configuration name="KafkaConsumerAutoTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KafkaConsumerManualTest_threadConsumer - 2019.03.14 at 14h 35m 48s.xml">
+      <configuration name="KafkaConsumerManualTest.threadConsumer" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="94465000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="23" width="1856" height="1057" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27398014" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3641189" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42250532" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008183" side_tool="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32908705" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32908705" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49918166" weight="0.38428876" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" weight="0.32951444" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32910696" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>records</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>consumer.poll(Duration.ofMillis(200))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>record</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/java/com/walker/SpringCloudEurekaProducerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-kafka/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-demo1/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-producer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="5" lean-forward="true" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix/src/main/java/com/walker/SpringCloudHystrixApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/java/com/walker/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-producer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23-sources.jar!/org/yaml/snakeyaml/Yaml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="546" selection-start-line="546" selection-end-line="546" />
+          <folding>
+            <element signature="e#19448#19449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/java/com/walker/SpringCloudEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-single.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node3.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application-cluster-node1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-consumer/src/main/java/com/walker/SpringCloudEurekaConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/resources/application-node1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/src/main/java/com/walker/SpringCloudHystrixDashboardApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/remote/HelloRemoteHystrixImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/resources/application-node2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-feign/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-turbine/src/main/java/com/walker/SpringCloudHystrixTurbineApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="45" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/src/main/java/com/walker/SpringCloudHystrixDashboardNode2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>springboot-learning:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-cloud-eureka-consumer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37968442" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

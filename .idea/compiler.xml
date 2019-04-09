@@ -10,6 +10,10 @@
         <module name="spring-cloud-eureka-consumer" />
         <module name="spring-cloud-eureka-producer" />
         <module name="spring-cloud-feign" />
+        <module name="spring-cloud-hystrix" />
+        <module name="spring-cloud-hystrix-dashboard" />
+        <module name="spring-cloud-hystrix-dashboard-node2" />
+        <module name="spring-cloud-hystrix-turbine" />
         <module name="springboot-demo1" />
         <module name="springboot-kafka" />
         <module name="springboot-learning" />
@@ -23,6 +27,10 @@
       <module name="spring-cloud-eureka-consumer" options="-parameters" />
       <module name="spring-cloud-eureka-producer" options="-parameters" />
       <module name="spring-cloud-feign" options="-parameters" />
+      <module name="spring-cloud-hystrix" options="-parameters" />
+      <module name="spring-cloud-hystrix-dashboard" options="-parameters" />
+      <module name="spring-cloud-hystrix-dashboard-node2" options="-parameters" />
+      <module name="spring-cloud-hystrix-turbine" options="-parameters" />
       <module name="springboot-demo1" options="-parameters" />
       <module name="springboot-kafka" options="-parameters" />
     </option>

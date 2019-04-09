@@ -1,0 +1,24 @@
+###应用名称
+spring:
+  application:
+    name: hystrix-dashboard-turbine
+
+###端口号
+server:
+  port: 8001
+
+###turbine配置
+turbine:
+  app-config: spring-cloud-hystrix-node1,spring-cloud-hystrix-node2
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  combine-host-port: true
+  ##更改turbine连接的默认uri ,默认为/actuator/hystrix.stream，这是个大坑
+  instanceUrlSuffix: /hystrix.stream
+
+###eureka注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/

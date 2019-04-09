@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Walker
  * @date 2019/4/8 7:05 PM
  */
-@FeignClient(name = "spring-cloud-eureka-producer")
+//@FeignClient(name = "spring-cloud-eureka-producer")
 @Component
 public interface HelloRemote {
 

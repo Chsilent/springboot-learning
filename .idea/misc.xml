@@ -13,6 +13,10 @@
         <option value="$PROJECT_DIR$/spring-cloud-eureka-producer/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-node2/pom.xml" />
       </list>
     </option>
   </component>

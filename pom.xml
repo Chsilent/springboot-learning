@@ -16,6 +16,10 @@
     <module>spring-cloud-eureka-producer</module>
     <module>spring-cloud-eureka-consumer</module>
     <module>spring-cloud-feign</module>
+    <module>spring-cloud-hystrix</module>
+    <module>spring-cloud-hystrix-dashboard</module>
+    <module>spring-cloud-hystrix-dashboard-node2</module>
+    <module>spring-cloud-hystrix-turbine</module>
   </modules>
 
   <name>springboot-learning Maven Webapp</name>

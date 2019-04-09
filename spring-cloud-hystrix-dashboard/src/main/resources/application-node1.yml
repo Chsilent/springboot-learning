@@ -1,0 +1,30 @@
+###应用名称
+spring:
+  application:
+    name: spring-cloud-hystrix-node1
+
+###端口号
+server:
+  port: 9001
+
+###eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+  server:
+    #关闭自我保护,（当一定时间内没有收到某个微服务实例的心跳时，不会注销这个微服务）
+    enable-self-preservation: false
+
+###Feign Hystrix配置
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /

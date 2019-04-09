@@ -2,6 +2,10 @@
 spring:
   application:
     name: spring-cloud-eureka-consumer
+  #允许重定义bean,解决多个接口上的@FeignClient(“相同服务名”)会报错的问题
+  main:
+    allow-bean-definition-overriding: true
+
 ###端口号
 server:
   port: 9001
@@ -15,3 +19,8 @@ eureka:
   server:
     #关闭自我保护,（当一定时间内没有收到某个微服务实例的心跳时，不会注销这个微服务）
     enable-self-preservation: false
+
+###Feign Hystrix配置
+feign:
+  hystrix:
+    enabled: true

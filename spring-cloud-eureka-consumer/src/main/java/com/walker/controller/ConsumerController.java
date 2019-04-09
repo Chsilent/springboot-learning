@@ -1,6 +1,7 @@
 package com.walker.controller;
 
 import com.walker.remote.HelloRemote;
+import com.walker.remote.HelloRemoteHystrix;
 import com.walker.remote.HelloRemoteImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,13 +21,26 @@ public class ConsumerController {
     @Autowired
     HelloRemoteImpl helloRemoteImpl;
 
+    @Autowired
+    HelloRemoteHystrix helloRemoteHystrix;
+
     /**
+     * 远程调用服务
+     * @param name
+     * @return
+     */
+    /*@RequestMapping("hello")
+    public String getHelloService(@RequestParam String name) {
+        return helloRemoteImpl.hello(name);
+    }*/
+
+    /**
+     * 远程调用服务，服务不可用时，启用熔断机制
      * @param name
      * @return
      */
     @RequestMapping("hello")
-    public String getHelloService(@RequestParam String name) {
-        String result = helloRemoteImpl.hello(name);
-        return result;
+    public String testHystrix(@RequestParam String name) {
+        return helloRemoteHystrix.hello(name);
     }
 }

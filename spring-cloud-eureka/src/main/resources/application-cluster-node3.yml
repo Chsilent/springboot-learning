@@ -1,6 +1,6 @@
 ###端口号
 server:
-  port: 8082
+  port: 8083
 
 ###eureka配置
 eureka:
@@ -13,7 +13,7 @@ eureka:
     fetch-registry: false
     #设置与Eureka Server交互的地址，查询服务和注册服务都依赖该地址，多个地址使用','分隔
     service-url:
-      defaultZone: http://node1:8080/eureka/,http://node2:8081/eureka/
+      defaultZone: http://node1:8081/eureka/,http://node2:8082/eureka/
 
   server:
     #关闭自我保护,（当一定时间内没有收到某个微服务实例的心跳时，不会注销这个微服务）
