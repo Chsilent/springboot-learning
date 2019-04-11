@@ -1,0 +1,25 @@
+# 与spring-cloud相关的属性必须配置在bootstrap.properties中，config部分内容才能被正确加载。
+# 因为config的相关配置会先于application.properties，而bootstrap.properties的加载也是先于application.properties。
+spring:
+  cloud:
+    config:
+      name: walker-config     # 对应{application}部分
+      profile: dev            # 对应{profiles}部分
+      #uri: http://localhost:8001/ # 配置中心的具体地址 ，配置中心服务化，直接指向服务端的地址
+      label: master           # 对应git的分支。如果配置中心使用的是本地存储，则该参数无用
+      #discovery:
+        #service-id:           # 指定配置中心的service-id，便于扩展为高可用配置集群，也就是server端的application name。
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-server
+
+# eureka服务注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+  #management.endpoints.web.exposure.include=bus-refresh
+
+
+

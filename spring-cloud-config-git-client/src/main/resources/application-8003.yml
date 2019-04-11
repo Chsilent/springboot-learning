@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-config-client-8003
+  # bus总线机制，使用MQ传播消息
+  rabbitmq:
+    host: 118.25.222.167
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8003
+
+# 解决客户端Post请求/refresh报404的问题 需要config server端同步配置 "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,bus-refresh

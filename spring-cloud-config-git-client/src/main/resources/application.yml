@@ -1,0 +1,15 @@
+#spring:
+#  application:
+#    name: spring-cloud-config-client
+#server:
+#  port: 8002
+#
+## 解决客户端Post请求/refresh报404的问题 需要config server端同步配置 "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh
+spring:
+  profiles:
+    active: 8002,8003,8004

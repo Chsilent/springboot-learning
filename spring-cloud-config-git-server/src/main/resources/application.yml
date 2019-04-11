@@ -1,0 +1,34 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Chsilent/springboot-learning
+          search-paths: spring-cloud-config-git-server/config-repo #相对地址，子项目下的文件目录，一定要定位到子项目
+          username: Chsilent
+          password:
+  # bus总线机制，使用MQ传播消息
+  rabbitmq:
+    host: 118.25.222.167
+    port: 5672
+    username: guest
+    password: guest
+
+# 解决客户端Post请求/refresh报404的问题
+# 解决客户端Post请求bus/refresh报错的问题。springboot2.0后，请求改为http://localhost:{port}/actuator/bus-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+

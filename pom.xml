@@ -21,6 +21,8 @@
     <module>spring-cloud-hystrix-dashboard-node2</module>
     <module>spring-cloud-hystrix-turbine</module>
     <module>spring-cloud-config-git-server</module>
+    <module>spring-cloud-config-git-client</module>
+    <module>spring-cloud-config-bus</module>
   </modules>
 
   <name>springboot-learning Maven Webapp</name>
