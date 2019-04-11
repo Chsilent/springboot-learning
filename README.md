@@ -1,3 +1,2 @@
 # springboot-learning
-spring boot demo and spring cloud demo.
-不定期更新。
+基于spring boot，spring cloud组件集成，陆续更新
