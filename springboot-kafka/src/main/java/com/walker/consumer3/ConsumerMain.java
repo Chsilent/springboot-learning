@@ -14,7 +14,7 @@ public class ConsumerMain {
 
         String brokerList = "127.0.0.1:9092";
         String groupId = "walkerTest1";
-        String topic = "topic1";
+        String topic = "topic3";
         int workerNum = 5;
 
         ConsumerHandler consumer = new ConsumerHandler(brokerList, groupId, topic);

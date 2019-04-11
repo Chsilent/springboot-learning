@@ -88,7 +88,7 @@ public class KafkaProducer {
         ResultInfo resultInfo = new ResultInfo();
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
-        ProducerThread producerThread = new ProducerThread(kafkaTemplate, "topic1");
+        ProducerThread producerThread = new ProducerThread(kafkaTemplate, "topic3");
         executorService.execute(producerThread);
         //关闭线程池
         //executorService.shutdown();

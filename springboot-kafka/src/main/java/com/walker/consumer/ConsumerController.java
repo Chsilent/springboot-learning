@@ -40,7 +40,7 @@ public class ConsumerController {
         int size = 5;
         ExecutorService executorService = Executors.newFixedThreadPool(size);
         for (int i = 0; i < size; i++) {
-            ConsumerThread consumerThread = new ConsumerThread(broker, groupId, "topic1");
+            ConsumerThread consumerThread = new ConsumerThread(broker, groupId, "topic3");
             executorService.submit(consumerThread);
         }
         return resultInfo;

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 测试：http://localhost:9002/hello?name=
  * @author Walker
  * @date 2019/4/8 7:07 PM
  */
