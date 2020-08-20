@@ -2,6 +2,13 @@
 spring:
   application:
     name: spring-cloud-eureka-producer
+  # zipkin配置
+  zipkin:
+    base-url: http://118.25.222.167:9411/
+  sleuth:
+    sampler:
+      # 采样率，为1表示全部的请求都进行采样
+      probability: 1.0
 ###端口号
 server:
   port: 9000

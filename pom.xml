@@ -7,7 +7,7 @@
   <groupId>com.walker</groupId>
   <artifactId>springboot-learning</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <modules>
     <module>springboot-demo1</module>
@@ -23,6 +23,11 @@
     <module>spring-cloud-config-git-server</module>
     <module>spring-cloud-config-git-client</module>
     <module>spring-cloud-config-bus</module>
+    <module>spring-cloud-zuul</module>
+    <module>spring-cloud-zipkin-server</module>
+    <module>springboot-rabbitmq</module>
+    <module>spring-cloud-dubbo</module>
+    <module>springboot-graceful-shutdown</module>
   </modules>
 
   <name>springboot-learning Maven Webapp</name>

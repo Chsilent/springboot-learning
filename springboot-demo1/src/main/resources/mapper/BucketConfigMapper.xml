@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.walker.mapper.master.BucketConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.walker.entity.BucketConfig">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="tail" jdbcType="VARCHAR" property="tail"/>
+        <result column="tab_channel" jdbcType="VARCHAR" property="tabChannel"/>
+        <result column="algorithm" jdbcType="VARCHAR" property="algorithm"/>
+        <result column="algo_version" jdbcType="VARCHAR" property="algoVersion"/>
+        <result column="family_name" jdbcType="VARCHAR" property="familyName"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="table_name" jdbcType="VARCHAR" property="tableName"/>
+        <result column="use_channel" jdbcType="VARCHAR" property="useChannel"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+
+    <sql id="BASE_TABLE">
+        m_bucket_config
+    </sql>
+    <sql id="Base_Column_List">
+        id, tail, tab_channel, algorithm, algo_version, family_name, create_time, `type`, `table_name`, use_channel, `status`
+    </sql>
+    <select id="query" resultMap="BaseResultMap">
+        select
+        tab_channel,algorithm,algo_version,family_name,`type`, `table_name`, use_channel, `status`
+        from
+        <include refid="BASE_TABLE"/>
+        <where>
+            <if test="tail != null and tail !=''">
+                and tail = #{tail}
+            </if>
+            <if test="channel != null and channel !=''">
+                and tab_channel = #{channel}
+            </if>
+            <if test="type !=null and type!=''">
+                and `type` = #{type}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true"
+            parameterType="com.walker.entity.BucketConfig">
+        insert into
+        <include refid="BASE_TABLE"/>
+        (tail, tab_channel, algorithm, algo_version, family_name, `type`, `table_name`, use_channel, `status`)
+        values
+        (#{tail}, #{tabChannel}, #{algorithm}, #{algoVersion}, #{familyName}, #{type}, #{tableName}, #{useChannel},
+        #{status})
+    </insert>
+
+    <update id="update" parameterType="com.walker.entity.BucketConfig">
+        update
+        <include refid="BASE_TABLE"/>
+        <set>
+            <if test="algorithm != null and algorithm !=''">
+                algorithm = #{algorithm},
+            </if>
+            <if test="algoVersion != null and algoVersion !=''">
+                algo_version = #{algoVersion},
+            </if>
+            <if test="familyName != null and familyName !=''">
+                family_name = #{familyName},
+            </if>
+            <if test="tableName != null and tableName !=''">
+                `table_name` = #{tableName},
+            </if>
+            <if test="useChannel !=null and useChannel !=''">
+                use_channel = #{useChannel},
+            </if>
+            <if test="status !=null and status !=''">
+                status = #{status}
+            </if>
+        </set>
+        <where>
+            <if test="tail !=null and tail !=''">
+                tail = #{tail}
+            </if>
+            <if test="tabChannel !=null">
+                and tab_channel = #{tabChannel}
+            </if>
+            <if test="type !=null">
+                and `type` = #{type}
+            </if>
+        </where>
+    </update>
+
+    <delete id="delete" parameterType="com.walker.entity.BucketConfig">
+        delete from
+        <include refid="BASE_TABLE"/>
+        where tail = #{tail} and tab_channel = #{tabChannel} and `type` = #{type}
+    </delete>
+
+
+    <select id="getBucketConfigByCondition" resultMap="BaseResultMap">
+        select * from
+        <include refid="BASE_TABLE"/>
+        <where>
+            <if test="tabChannel != null and tabChannel !=''">
+                tab_channel = #{tabChannel}
+            </if>
+            <if test="type != null and type !=''">
+                and `type` = #{type}
+            </if>
+            <if test="status !=null and status !=''">
+                and status = #{status}
+            </if>
+        </where>
+
+    </select>
+
+    <delete id="deleteBucketConfigById">
+        delete from
+        <include refid="BASE_TABLE"/>
+        where id in
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </delete>
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from
+        <include refid="BASE_TABLE"/>
+        where id = #{id}
+    </delete>
+
+    <select id="getBucketConfigById" resultMap="BaseResultMap">
+        select * from
+        <include refid="BASE_TABLE"/>
+        where id = #{id}
+    </select>
+
+    <update id="updateBucketConfigStatus">
+        update
+        <include refid="BASE_TABLE"/>
+        set status = #{status}
+        where
+        id in
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
+    <update id="updateBucketConfigById">
+        update
+        <include refid="BASE_TABLE"/>
+        <set>
+            <if test="algorithm != null and algorithm !=''">
+                algorithm = #{algorithm},
+            </if>
+            <if test="algoVersion != null and algoVersion !=''">
+                algo_version = #{algoVersion},
+            </if>
+            <if test="familyName != null and familyName !=''">
+                family_name = #{familyName},
+            </if>
+            <if test="tableName != null and tableName !=''">
+                `table_name` = #{tableName},
+            </if>
+            <if test="useChannel !=null and useChannel !=''">
+                use_channel = #{useChannel},
+            </if>
+            <if test="status !=null and status !=''">
+                status = #{status}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <select id="getBucketConfigByIds" resultMap="BaseResultMap">
+
+        select * from
+        <include refid="BASE_TABLE"/>
+        where id in
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+</mapper>

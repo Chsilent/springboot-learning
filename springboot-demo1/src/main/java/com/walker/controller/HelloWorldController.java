@@ -1,6 +1,7 @@
 package com.walker.controller;
 
 import com.walker.exception.NullOrEmptyException;
+import com.walker.exception.ResultEmptyException;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,6 +44,9 @@ public class HelloWorldController {
         if (StringUtils.isEmpty(param)) {
             throw new NullOrEmptyException("test null or empty");
         }
-        return "request is ok";
+        if(param.equals("2333")){
+            throw new ResultEmptyException("result null or empty");
+        }
+       return "request is ok";
     }
 }

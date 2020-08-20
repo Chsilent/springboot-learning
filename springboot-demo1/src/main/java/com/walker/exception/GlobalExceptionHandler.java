@@ -57,6 +57,12 @@ public class GlobalExceptionHandler {
         return handlerErrorInfo(request, exception.getMessage(), exception);
     }
 
+    @ExceptionHandler(ResultEmptyException.class)
+    @ResponseBody
+    public ErrorMessage<String> resultEmptyExceptionHandler(HttpServletRequest request, NullOrEmptyException exception) throws Exception {
+        return handlerErrorInfo(request, exception.getMessage(), exception);
+    }
+
     /**
      * 处理异常信息
      *

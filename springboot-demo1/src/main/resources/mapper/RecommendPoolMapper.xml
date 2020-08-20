@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.walker.mapper.slave.RecommendPoolMapper">
+    <resultMap id="BaseResultMap" type="com.walker.entity.RecommendPool">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, `name`, description, update_time, create_time, user_name
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from m_recommend_pool
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="query" parameterType="com.walker.entity.RecommendPool" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from m_recommend_pool
+        <where>
+            <if test="name !=null and name !=''.toString()">
+                `name` like '%${name}%'
+            </if>
+            <if test="description !=null and description !=''.toString()">
+                and description like '%${description}%'
+            </if>
+        </where>
+    </select>
+    <select id="queryAll" resultMap="BaseResultMap">
+        select id, `name`
+        from m_recommend_pool
+        order by id desc
+    </select>
+    <select id="findNameById" parameterType="java.lang.Integer" resultType="java.lang.String">
+        select `name`
+        from m_recommend_pool
+        where id = #{id}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from m_recommend_pool
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id"
+            parameterType="com.walker.entity.RecommendPool" useGeneratedKeys="true">
+    insert into m_recommend_pool (`name`, description, update_time, 
+      create_time, user_name)
+    values (#{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{userName,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id"
+            parameterType="com.walker.entity.RecommendPool" useGeneratedKeys="true">
+        insert into m_recommend_pool
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                `name`,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.walker.entity.RecommendPool">
+        update m_recommend_pool
+        <set>
+            <if test="name != null">
+                `name` = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userName != null">
+                user_name = #{userName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.walker.entity.RecommendPool">
+    update m_recommend_pool
+    set `name` = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      user_name = #{userName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

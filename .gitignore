@@ -26,3 +26,12 @@ hs_err_pid*
 
 /.idea/
 /logs/
+/spring-cloud-zuul/.mvn/
+/spring-cloud-zuul/mvnw
+/spring-cloud-zuul/.gitignore
+/spring-cloud-zuul/mvnw.cmd
+
+/spring-cloud-zipkin-server/mvnw.cmd
+/spring-cloud-zipkin-server/mvnw
+/spring-cloud-zipkin-server/.gitignore
+/spring-cloud-zipkin-server/.mvn/

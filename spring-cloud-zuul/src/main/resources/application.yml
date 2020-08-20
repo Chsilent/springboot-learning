@@ -1,0 +1,31 @@
+# 应用名
+spring:
+  application:
+    name: spring-cloud-zuul
+  zipkin:
+    base-url: http://118.25.222.167:9411/
+  sleuth:
+    sampler:
+      # 采样率，为1表示全部的请求都进行采样
+      probability: 1.0
+
+# 端口号
+server:
+  port: 8088
+
+# zuul配置
+#zuul:
+#  routes:
+#    # baidu.path/url自行配置，访问/walker/** 直接重定向到http://www.baidu.com/**
+#    baidu:
+#      path: /walker/
+#      url: http://www.baidu.com
+
+
+# eureka配置 实现默认的路由规则，而不是根据zuul routes配置具体的单个服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+
