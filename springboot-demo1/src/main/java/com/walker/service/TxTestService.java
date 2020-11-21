@@ -30,8 +30,12 @@ public class TxTestService {
      *
      * @param id
      */
+    @Transactional(rollbackFor = Exception.class)
     public void deleteBucketConfig(Integer id) {
         bucketConfigMapper.deleteById(id);
+        //同个service里，方法A开启事务，再调用开启事务的方法B，方法B的事务不生效
+        //原因：Spring 事务通过AOP实现，AOP通过动态代理实现能拿到方法A的代理对象，但是调用方法B使用的是目标对象，所以B事务不生效。
+        //deleteRecommendPool(3);
     }
 
     /**
