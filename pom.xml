@@ -23,14 +23,16 @@
         <module>spring-cloud-config-git-server</module>
         <module>spring-cloud-config-git-client</module>
         <module>spring-cloud-config-bus</module>
-        <module>spring-cloud-zuul</module>
-        <module>spring-cloud-zipkin-server</module>
+        <!--<module>spring-cloud-zuul</module>
+        <module>spring-cloud-zipkin-server</module>-->
         <module>springboot-rabbitmq</module>
         <module>spring-cloud-dubbo</module>
         <module>springboot-graceful-shutdown</module>
         <module>springboot-dubbo-api</module>
         <module>springboot-dubbo-provider</module>
         <module>springboot-dubbo-consumer</module>
+        <module>springboot-rocketmq-producer</module>
+        <module>springboot-rocketmq-consumer</module>
     </modules>
 
     <name>springboot-learning Maven Webapp</name>
