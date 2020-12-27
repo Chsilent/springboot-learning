@@ -16,11 +16,11 @@ import java.util.concurrent.TimeUnit;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello(String name) {
-        /*try {
-            TimeUnit.SECONDS.sleep(5);
+        try {
+            //TimeUnit.SECONDS.sleep(8);
         } catch (Exception e) {
             log.error("********error***********:", e);
-        }*/
+        }
         return "hello  ".concat(name);
     }
 }

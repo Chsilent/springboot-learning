@@ -2,9 +2,11 @@ package com.walker.springbootdubboconsumer.controller;
 
 import com.walker.demo.HelloService;
 import com.walker.springbootdubboconsumer.bean.entity.ResultInfo;
+import com.walker.springbootdubboconsumer.service.NacosDiscoveryService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,8 +21,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Reference(version = "1.0.0", group = "walker", timeout = 3000, cluster = "failback")
+    @Reference(version = "1.0.0", group = "walker", timeout = 3000, cluster = "failfast", mock = "com.walker.springbootdubboconsumer.service.HelloServiceMockImpl")
     private HelloService helloService;
+
+    @Autowired
+    private NacosDiscoveryService nacosDiscoveryService;
 
     /**
      * 服务消费者调用服务提供者的服务
@@ -32,6 +37,7 @@ public class HelloController {
     public Object hello(@RequestParam("name") String name) {
         ResultInfo resultInfo = new ResultInfo();
         try {
+            nacosDiscoveryService.test();
             String result = helloService.sayHello(name);
             resultInfo.setData(result);
         } catch (Exception e) {
