@@ -14,13 +14,10 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Service(version = "1.0.0", group = "walker")
 public class HelloServiceImpl implements HelloService {
+
     @Override
     public String sayHello(String name) {
-        try {
-            //TimeUnit.SECONDS.sleep(8);
-        } catch (Exception e) {
-            log.error("********error***********:", e);
-        }
-        return "hello  ".concat(name);
+        log.info("async provider received: {}", name);
+        return "hello".concat(name);
     }
 }

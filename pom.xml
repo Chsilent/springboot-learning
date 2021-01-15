@@ -33,6 +33,7 @@
         <module>springboot-dubbo-consumer</module>
         <module>springboot-rocketmq-producer</module>
         <module>springboot-rocketmq-consumer</module>
+        <module>springboot-swagger</module>
     </modules>
 
     <name>springboot-learning Maven Webapp</name>
