@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Walker
  * @date 2021/7/24 15:36
@@ -24,6 +26,7 @@ public class HelloService {
      */
     public String sayHello(String name, String sex) {
         HelloRequest request = HelloRequest.newBuilder().setName(name).setSex(sex).build();
-        return helloServiceBlockingStub.sayHello(request).getMessage();
+        //return helloServiceBlockingStub.sayHello(request).getMessage();
+        return helloServiceBlockingStub.withDeadlineAfter(2, TimeUnit.SECONDS).sayHello(request).getMessage();
     }
 }
