@@ -34,6 +34,9 @@
         <module>springboot-rocketmq-producer</module>
         <module>springboot-rocketmq-consumer</module>
         <module>springboot-swagger</module>
+        <module>springboot-grpc-interface</module>
+        <module>springboot-grpc-consumer</module>
+        <module>springboot-grpc-provider</module>
     </modules>
 
     <name>springboot-learning Maven Webapp</name>

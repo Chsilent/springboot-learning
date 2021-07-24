@@ -1,0 +1,23 @@
+syntax = "proto3"; //第一行指定当前文件使用的是proto3语法，默认是proto2语法
+
+package grpc;//package是定义对应的java类的命名空间
+option java_package = "com.walker.springbootgrpcinterface";//java_package是定义编译生成的java文件所在的目录
+option java_outer_classname = "HelloWorldService";//要生成Java类的名称
+option java_multiple_files = true;//编译后会生成多个Message类,并没包含在HelloWorldService.java文件中，反之则会包含在该文件中
+
+
+//服务端接口类
+service HelloService {
+  rpc sayHello (HelloRequest) returns (HelloReply) {} //服务端接口方法
+}
+
+//请求参数 基于序号的协议字段映射，字段可以乱序
+message HelloRequest{
+  string name = 1;
+  string sex = 2;
+}
+
+//响应参数
+message HelloReply{
+  string message = 1;
+}
